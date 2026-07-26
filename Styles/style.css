@@ -1,0 +1,44 @@
+body {
+    background-color: #0D1117;
+    color: #dfe2eb;
+    overflow-x: hidden;
+}
+
+.cyber-glow {
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.cyber-glow-hover:hover {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+}
+
+.glass-surface {
+    background: rgba(22, 27, 34, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid #30363D;
+}
+
+.timeline-line {
+    background: linear-gradient(to bottom, #30363D 0%, #00F0FF 50%, #30363D 100%);
+}
+
+.animate-pulse-cyan {
+    animation: pulse-cyan 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.soft {
+    color: #dbfcff;
+    border-color: #dbfcff;
+}
+
+@keyframes pulse-cyan {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
