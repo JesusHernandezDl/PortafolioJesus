@@ -423,11 +423,17 @@
             <div id="contacto">
                 <h2 class="font-headline-lg text-headline-lg text-primary">¿Estás listo para conectar?</h2>
                 <p class="font-body-lg text-on-surface-variant mb-xl max-w-md">Contáctame por redes.</p>
+                <!-- Correo -->
                 <div class="space-y-lg">
-                    <a class="flex items-center gap-md group" href="#">
+                    <!-- Enlace -->
+                    <a class="flex items-center gap-md group" id="correo" href="mailto:jesushddl220526@gmail.com"
+                        data-email="jesushddl220526@gmail.com">
                         <div
-                            class="w-12 h-12 flex items-center justify-center glass-surface rounded-lg group-hover:border-primary-container transition-all">
-                            <span class="material-symbols-outlined text-primary-container">alternate_email</span>
+                            class="w-12 h-12 flex items-center justify-center glass-surface rounded-lg group-hover:text-primary-container group-hover:border-primary-container transition-all">
+                            <button class="" id="btnCopiar">
+                                <span class="material-symbols-outlined">content_copy</span><span
+                                    style="font-size: xx-small;"></span>
+                            </button>
                         </div>
                         <div>
                             <span class="font-label-mono text-xs text-on-surface-variant block">EMAIL</span>
@@ -435,7 +441,6 @@
                                 class="font-body-md text-on-surface group-hover:text-primary-container transition-colors">jesushddl220526@gmail.com</span>
                         </div>
                     </a>
-                    <a class="flex items-center gap-md group" href="#">
                 </div>
             </div>
             <div class="flex gap-lg justify-center">
@@ -489,6 +494,7 @@
                     </svg>
                     LinkedIn
                 </a>
+                <!-- Top -->
                 <a class="font-label-mono text-primary-container hover:text-primary flex items-center gap-xs transition-colors duration-200"
                     href="#top">
                     ↑ Volver arriba

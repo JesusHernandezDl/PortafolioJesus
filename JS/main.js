@@ -8,4 +8,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const enlace = document.getElementById('correo');
+const boton = document.getElementById('btnCopiar');
 
+boton.addEventListener('click', async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const email = enlace.dataset.email;
+
+    try {
+        await navigator.clipboard.writeText(email);
+        alert('¡Correo copiado!');
+    } catch (err) {
+        console.error('Error al copiar', err);
+    }
+});
