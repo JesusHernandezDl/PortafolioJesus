@@ -31,6 +31,19 @@ body {
     border-color: #dbfcff;
 }
 
+#top,
+#sobre_mi {
+    scroll-margin-top: 80px;
+}
+
+#proyectos {
+    scroll-margin-top: 40px;
+}
+
+.enlaceGit {
+    color: #cebdff;
+}
+
 @keyframes pulse-cyan {
 
     0%,
