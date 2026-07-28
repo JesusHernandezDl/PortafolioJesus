@@ -12,9 +12,6 @@ const enlace = document.getElementById('correo');
 const boton = document.getElementById('btnCopiar');
 
 boton.addEventListener('click', async (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
     const email = enlace.dataset.email;
 
     try {

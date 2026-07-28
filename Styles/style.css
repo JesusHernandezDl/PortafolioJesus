@@ -44,6 +44,10 @@ body {
     color: #cebdff;
 }
 
+#btnCopiar:hover {
+    color: #00F0FF;
+}
+
 @keyframes pulse-cyan {
 
     0%,
