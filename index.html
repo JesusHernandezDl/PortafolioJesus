@@ -149,8 +149,26 @@
                 </button>
             </div>
             <!-- Botón menú para Móvil-->
-            <button class=" md:hidden text-primary-container">
-                <span class="material-symbols-outlined">menu</span>
+            <button id="btnMenu" type="button"
+                class=" md:hidden text-primary-container ml-4 text-on-primary font-label-mono font-bold rounded-lg cyber-glow cyber-glow-hover active:scale-95 transform transition-all">
+                <span class="material-symbols-outlined" id="iconoMenu">menu</span>
+            </button>
+        </div>
+        <!-- Desplegable Móvil (Oculto por defecto con la clase 'hidden') -->
+        <div id="menuMovil"
+            class="hidden md:hidden flex-col gap-5 p-6 glass-surface border-t border-outline/10 transition-all duration-300 ease-out ">
+            <ul class="flex flex-col gap-4">
+                <li><a class="font-label-mono text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                        href="#proyectos">Proyectos</a></li>
+                <li> <a class="font-label-mono text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                        href="#sobre_mi">Sobre mí/Trayectoría</a></li>
+                <li><a class="font-label-mono text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                        href="#contacto">Contacto</a></li>
+            </ul>
+            <button
+                class="ml-4 bg-primary-container text-on-primary px-md py-sm font-label-mono font-bold rounded-lg cyber-glow cyber-glow-hover active:scale-95 transform transition-all"
+                onclick="window.open('./assets/docs/CV Jesús Hernández Delgado.pdf', '_blank')">
+                VIZUALIZAR CV
             </button>
         </div>
     </nav>
